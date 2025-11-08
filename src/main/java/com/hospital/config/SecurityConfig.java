@@ -59,11 +59,7 @@ private JwtRequestFilter jwtRequestFilter;
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-<<<<<<< HEAD
         configuration.setAllowedOrigins(Arrays.asList("*"));
-=======
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:5000", "http://localhost:3000"));
->>>>>>> 1fbf345837554de4ea57bb7352f4fbcee08f9ffe
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setAllowCredentials(true);
